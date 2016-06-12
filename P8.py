@@ -12,7 +12,7 @@ class ComplexNumber(object):
     def add(self,N):
         return ComplexNumber(self.a + N.a, self.b + N.b)
 
-    def substract(self, N):
+    def subtract(self, N):
         real = self.a - N.a
         imaginary = self.b - N.b
         return ComplexNumber(real, imaginary)
@@ -29,5 +29,5 @@ print"c2 conjugate =", c2.conjugate()
 print "c1 + c2 =", c1.add(c2)
 print "c1 + c1 conjugate =", c1.add(c1.conjugate())
 
-print "c1 - c2 =", c1.substract(c2)
-print "c1 - c1 conjugate =", c1.substract(c1.conjugate())
+print "c1 - c2 =", c1.subtract(c2)
+print "c1 - c1 conjugate =", c1.subtract(c1.conjugate())
